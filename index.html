@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page metadata and global font/stylesheet links -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Google Fonts: Inter family used across all text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main layout and component styles for this page -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Fixed label to show this is the static HTML-only version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Container for the horizontal pricing cards -->
     <div class="cards-container">
+
+        <!-- Hobby plan card (free tier) -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Hobby</h3>
+
+                <!-- Price row (only amount shown for free tier) -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+
+                <!-- Features block for Hobby -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +51,24 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Secondary action button for free download -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Pro plan card (paid tier) -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Pro</h3>
+
+                <!-- Price row with amount and billing period -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+
+                <!-- Features block for Pro, building on Hobby -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,7 +91,49 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Primary action button for paid Pro upgrade -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- Enterprise plan card (for larger teams) -->
+        <div class="card">
+            <div class="card-top">
+                <!-- Plan name -->
+                <h3 class="card-title">Enterprise</h3>
+
+                <!-- Price row with amount and billing period -->
+                <p class="card-price">
+                    <span class="card-price-amount">$60</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+
+                <!-- Features block for Enterprise, building on Pro -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom onboarding and training
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated account manager
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Advanced security controls
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support SLAs
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Primary action button tailored for Enterprise contact -->
+            <button class="download-button primary">Contact sales</button>
         </div>
     </div>
 </body>
